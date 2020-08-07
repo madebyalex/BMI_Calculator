@@ -21,25 +21,17 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="dBM-J7-8rK">
                                 <rect key="frame" x="40" y="264" width="334" height="600"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="8qs-y8-vbW">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="120"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="8qs-y8-vbW">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="120.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQK-4f-YoB">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="62.5"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="44"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="your BMI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPh-PO-E0c">
-                                                <rect key="frame" x="0.0" y="57.5" width="334" height="62.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate your BMI" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQK-4f-YoB">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="120.5"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="44"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="vVS-F9-fFV"/>
-                                        </constraints>
+                                        <variation key="heightClass=compact-widthClass=regular" alignment="fill" axis="horizontal" distribution="fillEqually"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="oQ5-ad-AUJ" userLabel="Bottom part">
                                         <rect key="frame" x="0.0" y="388" width="334" height="212"/>
@@ -81,6 +73,7 @@
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2.5" translatesAutoresizingMaskIntoConstraints="NO" id="OcZ-3I-K7z" userLabel="Slider height">
                                                                 <rect key="frame" x="-2" y="24" width="338" height="25"/>
                                                                 <color key="tintColor" red="0.36862745099999999" green="0.69019607839999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="thumbTintColor" red="0.36862745099999999" green="0.69019607839999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </slider>
                                                         </subviews>
                                                         <constraints>
@@ -121,6 +114,7 @@
                                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2.5" translatesAutoresizingMaskIntoConstraints="NO" id="9kR-2Q-7jb" userLabel="Sldier weight">
                                                                 <rect key="frame" x="-2" y="24" width="338" height="25"/>
                                                                 <color key="tintColor" red="0.36862745099999999" green="0.69019607839999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="thumbTintColor" red="0.36862745099999999" green="0.69019607839999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </slider>
                                                         </subviews>
                                                         <constraints>
@@ -152,7 +146,9 @@
                             <constraint firstAttribute="bottom" secondItem="dBM-J7-8rK" secondAttribute="bottom" constant="32" id="QnG-gZ-veR"/>
                             <constraint firstItem="k1h-6e-pVV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Yru-Dv-mol"/>
                             <constraint firstItem="dBM-J7-8rK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="bdS-2i-7hm"/>
-                            <constraint firstItem="dBM-J7-8rK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="220" id="h1X-hh-PUf"/>
+                            <constraint firstItem="dBM-J7-8rK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="220" id="h1X-hh-PUf">
+                                <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="dBM-J7-8rK" secondAttribute="trailing" constant="40" id="p8k-Fi-lNj"/>
                             <constraint firstAttribute="trailing" secondItem="k1h-6e-pVV" secondAttribute="trailing" id="vY5-aN-wWB"/>
                         </constraints>
