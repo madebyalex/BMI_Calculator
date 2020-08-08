@@ -32,7 +32,11 @@ class ViewController: UIViewController {
         let weight = weightSlider.value
         
         let bmi = Int(weight / pow(height, 2))  // Using a "power" / pow() function
-        print (bmi)
+        
+        let resultVC = ResultViewController()
+        resultVC.bmiValue = String(bmi)
+        
+        self.present(resultVC, animated: true, completion: nil)
     }
     
     
