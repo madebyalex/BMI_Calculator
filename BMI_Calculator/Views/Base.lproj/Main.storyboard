@@ -54,7 +54,7 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="wBg-51-8uK" userLabel="Height value wrap">
                                                                         <rect key="frame" x="266" y="0.0" width="68" height="24"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hW-SI-7zQ" userLabel="Height value">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.78" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hW-SI-7zQ" userLabel="Height value">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="48" height="24"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="48" id="7FZ-F9-ROE"/>
@@ -73,7 +73,7 @@
                                                                     </stackView>
                                                                 </subviews>
                                                             </stackView>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="1" maxValue="2.5" translatesAutoresizingMaskIntoConstraints="NO" id="OcZ-3I-K7z" userLabel="Slider height">
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.78" minValue="1" maxValue="2.5" translatesAutoresizingMaskIntoConstraints="NO" id="OcZ-3I-K7z" userLabel="Slider height">
                                                                 <rect key="frame" x="-2" y="24" width="338" height="25"/>
                                                                 <color key="tintColor" red="0.36862745099999999" green="0.69019607839999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <color key="thumbTintColor" red="0.36862745099999999" green="0.69019607839999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -101,7 +101,7 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="sob-Pb-dyi" userLabel="Weight value wrap">
                                                                         <rect key="frame" x="261" y="0.0" width="73" height="24"/>
                                                                         <subviews>
-                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="78" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tb-B3-1fw" userLabel="Weight value">
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="73" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tb-B3-1fw" userLabel="Weight value">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="48" height="24"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="48" id="4H3-Pm-6hq"/>
@@ -120,7 +120,7 @@
                                                                     </stackView>
                                                                 </subviews>
                                                             </stackView>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="78" minValue="0.0" maxValue="350" translatesAutoresizingMaskIntoConstraints="NO" id="9kR-2Q-7jb" userLabel="Slider weight">
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="73" minValue="0.0" maxValue="350" translatesAutoresizingMaskIntoConstraints="NO" id="9kR-2Q-7jb" userLabel="Slider weight">
                                                                 <rect key="frame" x="-2" y="24" width="338" height="25"/>
                                                                 <color key="tintColor" red="0.36862745099999999" green="0.69019607839999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <color key="thumbTintColor" red="0.36862745099999999" green="0.69019607839999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -174,7 +174,7 @@
                         <outlet property="heightValue" destination="0hW-SI-7zQ" id="R5I-x2-auf"/>
                         <outlet property="weightSlider" destination="9kR-2Q-7jb" id="WAO-ER-WAP"/>
                         <outlet property="weightValue" destination="8tb-B3-1fw" id="djJ-OE-wIa"/>
-                        <segue destination="7cC-WG-exc" kind="presentation" identifier="goToResult" id="cx8-q8-NpJ"/>
+                        <segue destination="7cC-WG-exc" kind="presentation" identifier="goToResult" modalPresentationStyle="pageSheet" id="cx8-q8-NpJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -189,29 +189,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bg_02" translatesAutoresizingMaskIntoConstraints="NO" id="aHq-pF-P3L">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bg_04" translatesAutoresizingMaskIntoConstraints="NO" id="aHq-pF-P3L">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="vxQ-jk-53S">
-                                <rect key="frame" x="71" y="350.5" width="272" height="141"/>
+                                <rect key="frame" x="71" y="344" width="272" height="154"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR RESULT" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ym6-MA-76z">
-                                        <rect key="frame" x="0.0" y="0.0" width="272" height="36"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="26"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="272" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19.5" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2V-8w-48b">
-                                        <rect key="frame" x="0.0" y="43" width="272" height="60.5"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="44"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="40" width="272" height="76.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="56"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Better eat more vegetables" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75q-OC-QtO" userLabel="Bmi advice">
-                                        <rect key="frame" x="0.0" y="110.5" width="272" height="30.5"/>
+                                        <rect key="frame" x="0.0" y="123.5" width="272" height="30.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="22"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -221,13 +221,13 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbi-jk-bYT" userLabel="Recalculate btn">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="56"/>
-                                        <color key="backgroundColor" red="0.36862745099999999" green="0.69019607839999997" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="MSz-A8-ZRv"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                         <state key="normal" title="RECALCULATE">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="recalculatePressed:" destination="7cC-WG-exc" eventType="touchUpInside" id="43p-0G-Jsb"/>
@@ -236,7 +236,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.077864418820000003" green="0.60037272060000002" blue="0.91511591790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="dkk-P6-mJN" firstAttribute="trailing" secondItem="4v4-TZ-nSc" secondAttribute="trailing" constant="40" id="4On-ZZ-HL6"/>
                             <constraint firstItem="4v4-TZ-nSc" firstAttribute="leading" secondItem="dkk-P6-mJN" secondAttribute="leading" constant="40" id="M1d-kw-ykP"/>
@@ -246,6 +246,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dkk-P6-mJN"/>
                     </view>
+                    <navigationItem key="navigationItem" id="THi-LF-IuB"/>
                     <connections>
                         <outlet property="adviceLabel" destination="75q-OC-QtO" id="ASy-Ti-VYd"/>
                         <outlet property="bmiLabel" destination="w2V-8w-48b" id="47m-ek-E2H"/>
@@ -258,5 +259,6 @@
     </scenes>
     <resources>
         <image name="Bg_02" width="414" height="896"/>
+        <image name="Bg_04" width="414" height="896"/>
     </resources>
 </document>
